@@ -1,2 +1,4 @@
 UIUC Orange: f58026
 UIUC Blue: 003e7e
+
+Original Teal: #05bca9
