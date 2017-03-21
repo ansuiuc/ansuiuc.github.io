@@ -1204,6 +1204,7 @@ a.menu-toggle {
 }
 .intro-content .button {
 	border-color: #FFFFFF;
+	background-color: #f58026;
 	color: #FFFFFF;
 	height: 6.6rem;
 	line-height: 6rem;
@@ -1215,8 +1216,8 @@ a.menu-toggle {
 	letter-spacing: .4rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	color: #f58026;
-	border-color: #f58026;
+	color: #003e7e;
+	border-color: #003e7e;
 }
 
 /**
