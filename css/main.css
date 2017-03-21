@@ -1421,19 +1421,25 @@ a.menu-toggle {
 	text-align: justify;
 }
 .about-content .right-side,
+.about-content .mid-side,
 .about-content .left-side,
 .about-content .image-part {
 	width: 33.33333%;
 	font-size: 15px;
 	line-height: 27px;
 }
-.about-content .right-side, .about-content .left-side {
+.about-content .right-side,
+.about-content .mid-side,
+.about-content .left-side {
 	padding: 0 6% 24px;
 	position: absolute;
 	top: 0;
 }
 .about-content .right-side {
 	right: 0;
+}
+.about-content .mid-side {
+	
 }
 .about-content .left-side {
 	left: 0;
