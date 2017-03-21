@@ -1211,13 +1211,12 @@ a.menu-toggle {
 	padding: 0 3rem !important;
 	margin-top: 1.8rem;
 	font-family: "raleway-heavy", sans-serif;
-	font-size: 1.4rem;
+	font-size: 2.0rem;
 	text-transform: uppercase;
 	letter-spacing: .4rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	color: #003e7e;
-	border-color: #003e7e;
+	background-color: #003e7e;
 }
 
 /**
