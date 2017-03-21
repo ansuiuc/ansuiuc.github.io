@@ -1439,7 +1439,6 @@ a.menu-toggle {
 	right: 0;
 }
 .about-content .mid-side {
-	position: fixed;
 	top: 50%;
 	left: 50%;
 	/* bring your own prefixes */
