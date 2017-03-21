@@ -1418,7 +1418,7 @@ a.menu-toggle {
 }
 .about-content {
 	position: relative;
-	text-align: center;
+	text-align: justify;
 }
 .about-content .right-side,
 .about-content .left-side,
