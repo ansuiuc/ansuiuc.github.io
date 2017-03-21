@@ -2054,7 +2054,7 @@ a.menu-toggle {
 	color: #FFFFFF;
 }
 .section-ads .button:hover, .section-ads .button:focus {
-	background: #f58026;
+	background: #05ad9c;
 }
 
 
@@ -2093,7 +2093,7 @@ a.menu-toggle {
 	display: inline-block;
 }
 .cta-content .stores li .button {
-	background: #f58026;
+	background: #04a393;
 	color: #FFFFFF;
 	margin-right: 12px;
 	display: block;
@@ -2101,7 +2101,7 @@ a.menu-toggle {
 }
 .cta-content .stores li .button:hover,
 .cta-content .stores li .button:focus {
-	background: #f58026;
+	background: #049485;
 }
 .cta-content .stores li .button i {
 	font-size: 18px;
@@ -2350,7 +2350,7 @@ footer ul li {
 	width: 60px;
 	line-height: 66px;
 	text-align: center;
-	background: #f58026;
+	background: #048a7c;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
