@@ -15,7 +15,7 @@
  * 06. common styles
  * 07. header styles
  * 08. intro section
- * 09. process section
+ * 09. about section
  * 10. features section
  * 11. pricing section
  * 12. testimomials section
@@ -1405,40 +1405,40 @@ a.menu-toggle {
 
 /**
  * ===================================================================
- * process section
+ *  about section
  *
  * -------------------------------------------------------------------
  */
 
-#process {
+#about {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 	overflow: hidden;
 }
-.process-content {
+.about-content {
 	position: relative;
 	text-align: center;
 }
-.process-content .right-side,
-.process-content .left-side,
-.process-content .image-part {
+.about-content .right-side,
+.about-content .left-side,
+.about-content .image-part {
 	width: 33.33333%;
 	font-size: 15px;
 	line-height: 27px;
 }
-.process-content .right-side, .process-content .left-side {
+.about-content .right-side, .about-content .left-side {
 	padding: 0 6% 24px;
 	position: absolute;
 	top: 0;
 }
-.process-content .right-side {
+.about-content .right-side {
 	right: 0;
 }
-.process-content .left-side {
+.about-content .left-side {
 	left: 0;
 }
-.process-content .image-part {
+.about-content .image-part {
 	margin: 0 auto;
 	height: 660px;
 	background-image: url("../images/appdesign.jpg");
@@ -1448,7 +1448,7 @@ a.menu-toggle {
 	-moz-background-size: contain;
 	background-size: contain;
 }
-.process-content .item[data-item]::before {
+.about-content .item[data-item]::before {
 	background: #38424e;
 	color: #FFFFFF;
 	border-radius: 100%;
@@ -1463,7 +1463,7 @@ a.menu-toggle {
 	vertical-align: middle;
 	margin-bottom: 1.5rem;
 }
-.process-content h5 {
+.about-content h5 {
 	color: #f58026;
 	font-size: 1.6rem;
 	line-height: 1.875;
@@ -1473,25 +1473,25 @@ a.menu-toggle {
 
 /**
  * responsive:
- * process
+ * about
  * -
  */
 
 @media only screen and (max-width:1024px) {
-	.process-content .right-side, .process-content .left-side {
+	.about-content .right-side, .about-content .left-side {
 		padding: 0 3% 24px;
 		width: 35%;
 	}
-	.process-content .image-part {
+	.about-content .image-part {
 		height: 600px;
 		width: 30%;
 	}
 }
 @media only screen and (max-width:768px) {
-	#process {
+	#about {
 		padding-bottom: 27rem;
 	}
-	.process-content .right-side, .process-content .left-side {
+	.about-content .right-side, .about-content .left-side {
 		position: static;
 		width: 100%;
 		max-width: 480px;
@@ -1501,7 +1501,7 @@ a.menu-toggle {
 		margin-right: auto;
 		padding-bottom: 0;
 	}
-	.process-content .image-part {
+	.about-content .image-part {
 		width: 300px;
 		position: absolute;
 		bottom: -630px;
@@ -1510,10 +1510,10 @@ a.menu-toggle {
 	}
 }
 @media only screen and (max-width:400px) {
-	#process {
+	#about {
 		padding-bottom: 21rem;
 	}
-	.process-content .image-part {
+	.about-content .image-part {
 		width: 230px;
 		bottom: -540px;
 		margin-left: -115px;
