@@ -1426,7 +1426,6 @@ a.menu-toggle {
 .about-content .image-part {
 	background: #aaaaaa;
 	width: 33.33333%;
-	height: 250px;
 	font-size: 15px;
 	line-height: 27px;
 }
@@ -1441,7 +1440,6 @@ a.menu-toggle {
 	right: 0;
 }
 .about-content .mid-side {
-	top: 50%;
 	left: 50%;
 	/* bring your own prefixes */
 	transform: translate(-50%, 0%);
