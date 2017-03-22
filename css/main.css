@@ -1424,8 +1424,9 @@ a.menu-toggle {
 .about-content .mid-side,
 .about-content .left-side,
 .about-content .image-part {
+	background: #aaaaaa;
 	width: 33.33333%;
-	height: auto;
+	height: 250px;
 	font-size: 15px;
 	line-height: 27px;
 }
