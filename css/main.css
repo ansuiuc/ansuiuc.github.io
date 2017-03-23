@@ -1418,6 +1418,7 @@ a.menu-toggle {
 .about-content {
 	position: relative;
 	text-align: center;
+	margin-bottom: 5.2rem;
 }
 .about-content .right-side,
 .about-content .mid-side,
