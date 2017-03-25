@@ -16,9 +16,9 @@
  * 07. header styles
  * 08. intro section
  * 09. about section
- * 10. features section
- * 11. pricing section
- * 12. testimomials section
+ * 10. calendar section
+ * 11. professional section
+ * 12. outreach section
  * 13. faq section
  *	14. ad-section
  *	15. call-to-action section
@@ -589,7 +589,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 /**
- * Style Placeholder Text
+ * Style placeholder Text
  * -
  */
 
@@ -1414,11 +1414,29 @@ a.menu-toggle {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
+	overflow: auto;
 }
 .about-content {
-	position: relative;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 5.2rem;
+	position: relative;
+}
+.about-content .with-bottom-line {
+	float:left;
+	overflow: hidden;
+}
+.about-content .with-bottom-line::after {
+	display: block;
+	background-color: #f58026;
+	width: 120px;
+	height: 3px;
+	content: '\0020';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -60px;
 }
 .about-content .right-side,
 .about-content .mid-side,
@@ -1427,23 +1445,18 @@ a.menu-toggle {
 	width: 33.33333%;
 	font-size: 15px;
 	line-height: 27px;
+	float:left;
 }
 .about-content .right-side,
 .about-content .mid-side,
 .about-content .left-side {
 	padding: 0 6% 24px;
-	position: absolute;
-	top: 0;
 }
 .about-content .right-side {
-	right: 0;
 }
 .about-content .mid-side {
-	left: 50%;
-	transform: translate(-50%, 0%);
 }
 .about-content .left-side {
-	left: 0;
 }
 .about-content .image-part {
 	margin: 0 auto;
@@ -1530,12 +1543,12 @@ a.menu-toggle {
 
 /**
  * ===================================================================
- * features section
+ * calendar section
  *
  * -------------------------------------------------------------------
  */
 
-#features {
+#calendar {
 	background: #090909 url(../images/uiuc_grainger.JPG) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1544,34 +1557,35 @@ a.menu-toggle {
 	padding-bottom: 12rem;
 	color: white;
 }
-#features .section-intro h1 {
+#calendar .section-intro h1 {
 	color: white;
 }
-#features .section-intro h5 {
+#calendar .section-intro h5 {
 	color: rgba(255, 255, 255, 0.5);
 }
-#features .section-intro p {
+#calendar .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
 }
-.features-content {
-	max-width: 1200px;
+.calendar-content {
+	max-width: 1000px;
+	max-height: 810px;
 }
-.features-list {
+.calendar-list {
 	margin-top: 1.2rem;
 	text-align: center;
 }
-.features-list .feature {
+.calendar-list .feature {
 	margin-bottom: 1.2rem;
 	padding: 0 32px;
 }
-.features-list .icon {
+.calendar-list .icon {
 	display: inline-block;
 	margin-bottom: 2.1rem;
 }
-.features-list .icon i {
+.calendar-list .icon i {
 	font-size: 4.8rem;
 }
-.features-list .h05 {
+.calendar-list .h05 {
 	font-size: 1.7rem;
 	line-height: 1.765;
 	color: #f58026;
@@ -1580,25 +1594,25 @@ a.menu-toggle {
 
 /**
  * responsive:
- * features
+ * calendar
  * -
  */
 
 @media only screen and (max-width:768px) {
-	.features-content {
+	.calendar-content {
 		max-width: 600px;
 	}
-	.features-list .feature {
+	.calendar-list .feature {
 		padding: 0 15px;
 	}
 }
 @media only screen and (max-width:600px) {
-	.features-list .feature {
+	.calendar-list .feature {
 		padding: 0 10px;
 	}
 }
 @media only screen and (max-width:400px) {
-	.features-list .feature {
+	.calendar-list .feature {
 		padding: 0;
 	}
 }
@@ -1606,53 +1620,53 @@ a.menu-toggle {
 
 /**
  * ===================================================================
- * pricing section
+ * professional section
  *
  * -------------------------------------------------------------------
  */
 
-#pricing {
+#professional {
 	background: #EAEAED;
 	padding-top: 12rem;
 	padding-bottom: 9.6rem;
 }
-.pricing-content {
+.professional-content {
 	margin-top: 6.6rem;
 	max-width: 1280px;
 }
-.pricing-content .bgrid {
+.professional-content .bgrid {
 	margin-bottom: 3.6rem;
 }
-.pricing-content .price-block {
+.professional-content .price-block {
 	background-color: #FFFFFF;
 	border-radius: 5px;
 	overflow: hidden;
 	text-align: center;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-.pricing-content .price-block .top-part,
-.pricing-content .price-block .bottom-part {
+.professional-content .price-block .top-part,
+.professional-content .price-block .bottom-part {
 	padding: 3.9rem 1.5rem;
 }
-.pricing-content .price-block .top-part {
+.professional-content .price-block .top-part {
 	background: #58687b;
 	color: #FFFFFF;
 	padding-bottom: 2.4rem;
 	position: relative;
 }
-.pricing-content .price-block .bottom-part {
+.professional-content .price-block .bottom-part {
 	padding-top: 2.4rem;
 	padding-left: 3rem;
 	padding-right: 3rem;
 }
-.pricing-content .price-block .plan-title {
+.professional-content .price-block .plan-title {
 	color: #FFFFFF;
 	padding-bottom: 2.4rem;
 	margin-bottom: 1.2rem;
 	font-size: 2.4rem;
 	position: relative;
 }
-.pricing-content .price-block .plan-title::after {
+.professional-content .price-block .plan-title::after {
 	display: block;
 	background-color: rgba(255, 255, 255, 0.3);
 	width: 80px;
@@ -1663,60 +1677,60 @@ a.menu-toggle {
 	bottom: 0;
 	margin-left: -40px;
 }
-.pricing-content .price-block .plan-price {
+.professional-content .price-block .plan-price {
 	font-family: "raleway-bold", sans-serif;
 	font-size: 5rem;
 	line-height: 1;
 	margin-bottom: .6rem;
 }
-.pricing-content .price-block .plan-price sup {
+.professional-content .price-block .plan-price sup {
 	font-size: 2.4rem;
 	top: -1.5rem;
 	margin-right: 3px;
 }
-.pricing-content .price-block .price-month {
+.professional-content .price-block .price-month {
 	margin-bottom: 1.2rem;
 	font-family: "raleway-bold", sans-serif;
 	font-size: 1.6rem;
 }
-.pricing-content .price-block .price-meta {
+.professional-content .price-block .price-meta {
 	color: rgba(255, 255, 255, 0.5);
 	line-height: 1.8rem;
 }
-.pricing-content .price-block .button {
+.professional-content .price-block .button {
 	color: #353F49;
 	padding: 0 5rem;
 	margin-left: auto;
 	margin-right: auto;
 }
-.pricing-content .price-block .button:hover,
-.pricing-content .price-block .button:focus {
+.professional-content .price-block .button:hover,
+.professional-content .price-block .button:focus {
 	background: #58687b;
 	color: #FFFFFF;
 }
-.pricing-content .price-block .features {
+.professional-content .price-block .calendar {
 	list-style: none;
 	font-family: "raleway-bold", sans-serif;
 	font-size: 1.5rem;
 	color: rgba(0, 0, 0, 0.4);
 	margin: .6rem 0 1.8rem 0;
 }
-.pricing-content .price-block .features li {
+.professional-content .price-block .calendar li {
 	padding: .6rem 0;
 	border-bottom: 1px solid #EAEAED;
 }
-.pricing-content .price-block .features li strong {
+.professional-content .price-block .calendar li strong {
 	color: #353F49;
 	font-family: "raleway-bold", serif;
 	margin-right: 5px;
 }
-.pricing-content .price-block .features li:last-child {
+.professional-content .price-block .calendar li:last-child {
 	border: none;
 }
-.pricing-content .primary .top-part {
+.professional-content .primary .top-part {
 	background: #f58026;
 }
-.pricing-content .primary .top-part::before {
+.professional-content .primary .top-part::before {
 	content: attr(data-info);
 	display: block;
 	min-height: 48px;
@@ -1741,27 +1755,27 @@ a.menu-toggle {
 
 /**
  * responsive:
- * pricing
+ * professional
  * -
  */
 
 @media only screen and (max-width:1140px) {
-	.pricing-content {
+	.professional-content {
 		max-width: 800px;
 	}
-	.pricing-content .bgrid {
+	.professional-content .bgrid {
 		width: 50%;
 		clear: none;
 	}
-	.pricing-content .bgrid:nth-child(2n+1) {
+	.professional-content .bgrid:nth-child(2n+1) {
 		clear: both;
 	}
 }
 @media only screen and (max-width:600px) {
-	.pricing-content {
+	.professional-content {
 		max-width: 420px;
 	}
-	.pricing-content .bgrid {
+	.professional-content .bgrid {
 		width: 100% !important;
 		float: none !important;
 		clear: both !important;
@@ -1773,12 +1787,12 @@ a.menu-toggle {
 
 /**
  * ===================================================================
- * testimonials section
+ * outreach section
  *
  * -------------------------------------------------------------------
  */
 
-#testimonials {
+#outreach {
 	background: #FFFFFF;
 	padding-top: 10.2rem;
 	padding-bottom: 12rem;
@@ -1788,24 +1802,7 @@ a.menu-toggle {
 	overflow: hidden;
 	text-align: center;
 }
-#testimonials .h01 {
-	padding-bottom: 2.1rem;
-	margin-bottom: 3.6rem;
-	position: relative;
-	color: #252525;
-}
-#testimonials .h01::after {
-	display: block;
-	background-color: #f58026;
-	width: 120px;
-	height: 3px;
-	content: '\0020';
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	margin-left: -60px;
-}
-#testimonials .flex-container {
+#outreach .flex-container {
 	width: 80%;
 	max-width: 800px;
 	margin: 0 auto;
@@ -1869,19 +1866,19 @@ a.menu-toggle {
 }
 
 /* control nav */
-#testimonials .flex-control-nav {
+#outreach .flex-control-nav {
 	width: 100%;
 	text-align: center;
 	display: block;
 	position: absolute;
 	bottom: -42px;
 }
-#testimonials .flex-control-nav li {
+#outreach .flex-control-nav li {
 	margin: 0 6px;
 	display: inline-block;
 	zoom: 1;
 }
-#testimonials .flex-control-paging li a {
+#outreach .flex-control-paging li a {
 	width: 15px;
 	height: 15px;
 	display: block;
@@ -1892,32 +1889,32 @@ a.menu-toggle {
 	text-shadow: none;
 	color: transparent;
 }
-#testimonials .flex-control-paging li a:hover {
+#outreach .flex-control-paging li a:hover {
 	border: 4px solid #05bca9;
 }
-#testimonials .flex-control-paging li a.flex-active {
+#outreach .flex-control-paging li a.flex-active {
 	background: #f58026;
 	border-color: #f58026;
 	cursor: default;
 }
 
 /* direction nav */
-#testimonials .flex-direction-nav li {
+#outreach .flex-direction-nav li {
 	padding: 0;
 	z-index: 500;
 	position: absolute;
 	bottom: 0;
 	margin-bottom: -57px;
 }
-#testimonials .flex-direction-nav li a {
+#outreach .flex-direction-nav li a {
 	display: block;
 	opacity: .8;
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
 }
-#testimonials .flex-direction-nav li a.flex-prev::before,
-#testimonials .flex-direction-nav li a.flex-next::after {
+#outreach .flex-direction-nav li a.flex-prev::before,
+#outreach .flex-direction-nav li a.flex-next::after {
 	display: block;
 	background: #EAEAED;
 	color: #737373;
@@ -1934,21 +1931,21 @@ a.menu-toggle {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-#testimonials .flex-direction-nav li a.flex-prev::before {
+#outreach .flex-direction-nav li a.flex-prev::before {
 	content: "\f2ca";
 }
-#testimonials .flex-direction-nav li a.flex-next::after {
+#outreach .flex-direction-nav li a.flex-next::after {
 	content: "\f30f";
 }
-#testimonials .flex-direction-nav li a.flex-next:hover::after,
-#testimonials .flex-direction-nav li a.flex-prev:hover::before {
+#outreach .flex-direction-nav li a.flex-next:hover::after,
+#outreach .flex-direction-nav li a.flex-prev:hover::before {
 	background: #f58026;
 	color: #FFFFFF;
 }
-#testimonials .flex-direction-nav li.flex-nav-prev {
+#outreach .flex-direction-nav li.flex-nav-prev {
 	left: 0;
 }
-#testimonials .flex-direction-nav li.flex-nav-next {
+#outreach .flex-direction-nav li.flex-nav-next {
 	right: 0;
 }
 
@@ -1959,7 +1956,7 @@ a.menu-toggle {
  */
 
 @media only screen and (max-width:1024px) {
-	#testimonials .flex-container {
+	#outreach .flex-container {
 		max-width: 600px;
 	}
 	#testimonial-slider p {
@@ -1967,7 +1964,7 @@ a.menu-toggle {
 	}
 }
 @media only screen and (max-width:768px) {
-	#testimonials .flex-container {
+	#outreach .flex-container {
 		width: 90%;
 	}
 	#testimonial-slider p {
@@ -1975,7 +1972,7 @@ a.menu-toggle {
 	}
 }
 @media only screen and (max-width:600px) {
-	#testimonials .flex-container {
+	#outreach .flex-container {
 		width: 95%;
 	}
 	#testimonial-slider p {
@@ -1986,7 +1983,7 @@ a.menu-toggle {
 	}
 }
 @media only screen and (max-width:400px) {
-	#testimonials .flex-container {
+	#outreach .flex-container {
 		width: auto;
 	}
 	#testimonial-slider p {
@@ -2211,12 +2208,12 @@ footer ul li {
 	color: #FFFFFF;
 }
 .footer-main .footer-logo {
-	width: 162px;
-	height: 39px;
-	background: url("../images/footer-logo.png") no-repeat center;
+	width: 180px;
+	height: 45px;
+	background: url("../images/uiuc_longsmall_logo.png") no-repeat center;
 	background-size: 162px 39px;
 	margin: -.6rem 0 2.1rem -.3rem;
-	display: block;
+	display: inline-block;
 }
 .footer-main .footer-subscribe p {
 	margin-bottom: 1.2rem;
@@ -2265,6 +2262,14 @@ footer ul li {
 .footer-bottom {
 	margin-top: 3rem;
 	text-align: center;
+}
+.footer-bottom .copyright .logo{
+	width: 120px;
+	height: 25px;
+	background: url("../images/uiuc_longsmall_logo.png") no-repeat center;
+	background-size: 120px 30px;
+	margin: 0;
+	display: inline-block;
 }
 .footer-bottom .copyright span {
 	display: inline-block;
