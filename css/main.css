@@ -829,23 +829,37 @@ header .logo {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-header .logo a {
-	display: block;
+header .logo a.ans,
+header .logo a.facebook,
+header .logo a.twitter {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 2rem;
 	border: none;
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 42px;
-	height: 42px;
-	background: url("../images/ans_logo.png") no-repeat center;
-	background-size: 42px 42px;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
+}
+header .logo a.ans {
+	background: url("../images/ans_logo.png") no-repeat center;
+	background-size: 42px 42px;
+	margin-right: 2rem;
+}
+header .logo a.facebook {
+	background: url("../images/ans_logo.png") no-repeat center;
+	background-size: 28px 28px;
+}
+header .logo a.twitter {
+	background: url("../images/ans_logo.png") no-repeat center;
+	background-size: 28px 28px;
 }
 .sticky {
 	position: fixed;
@@ -1630,6 +1644,145 @@ a.menu-toggle {
 	padding-top: 12rem;
 	padding-bottom: 9.6rem;
 }
+#professional .flex-container {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+#motm-slider {
+	margin: 0 0 3rem 0;
+	position: relative;
+}
+#motm-slider .member {
+	float: right;
+	padding: 1.5rem;
+	padding-top: 3rem;
+	text-align: center;
+	width: 50%;
+}
+#motm-slider h1 {
+	font-family: "raleway-medium", sans-serif;
+	font-size: 2.5rem;
+	line-height: 1.8;
+	color: #000;
+}
+#motm-slider h3 {
+	font-family: "raleway-medium", sans-serif;
+	font-size: 2rem;
+	line-height: 1.8;
+	color: #000;
+}
+#motm-slider p {
+	font-family: "raleway-medium", sans-serif;
+	font-size: 2rem;
+	line-height: 1.8;
+	color: #8d8d8d;
+}
+#motm-slider p::before, #motm-slider p::after {
+	display: inline;
+	font-family: Arial, sans-serif;
+	color: #c7c7c7;
+	font-size: 6rem;
+	line-height: 0;
+	vertical-align: bottom;
+	position: relative;
+	top: -1.2rem;
+}
+#motm-slider p::before {
+	margin-right: .5rem;
+	content: '\201C';
+}
+#motm-slider p::after {
+	margin-left: .5rem;
+	content: '\201D';
+}
+#motm-slider img {
+	width: 50%;
+	float: left;
+}
+/* control nav */
+#professional .flex-control-nav {
+	width: 100%;
+	text-align: center;
+	display: block;
+	position: absolute;
+	bottom: -42px;
+}
+#professional .flex-control-nav li {
+	margin: 0 6px;
+	display: inline-block;
+	zoom: 1;
+}
+#professional .flex-control-paging li a {
+	width: 15px;
+	height: 15px;
+	display: block;
+	border: 4px solid #8d8d8d;
+	cursor: pointer;
+	border-radius: 50%;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+#professional .flex-control-paging li a:hover {
+	border: 4px solid #05bca9;
+}
+#professional .flex-control-paging li a.flex-active {
+	background: #f58026;
+	border-color: #f58026;
+	cursor: default;
+}
+
+/* direction nav */
+#professional .flex-direction-nav li {
+	padding: 0;
+	z-index: 500;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: -57px;
+}
+#professional .flex-direction-nav li a {
+	display: block;
+	opacity: .8;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+#professional .flex-direction-nav li a.flex-prev::before,
+#professional .flex-direction-nav li a.flex-next::after {
+	display: block;
+	background: #FFFFFF;
+	color: #737373;
+	border-radius: 5px;
+	font-family: "Ionicons";
+	font-size: 18px;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	text-align: center;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#professional .flex-direction-nav li a.flex-prev::before {
+	content: "\f2ca";
+}
+#professional .flex-direction-nav li a.flex-next::after {
+	content: "\f30f";
+}
+#professional .flex-direction-nav li a.flex-next:hover::after,
+#professional .flex-direction-nav li a.flex-prev:hover::before {
+	background: #f58026;
+	color: #FFFFFF;
+}
+#professional .flex-direction-nav li.flex-nav-prev {
+	left: 0;
+}
+#professional .flex-direction-nav li.flex-nav-next {
+	right: 0;
+}
 .professional-content {
 	margin-top: 6.6rem;
 	max-width: 1280px;
@@ -1649,7 +1802,6 @@ a.menu-toggle {
 	padding: 3.9rem 1.5rem;
 }
 .professional-content .price-block .top-part {
-	background: #58687b;
 	color: #FFFFFF;
 	padding-bottom: 2.4rem;
 	position: relative;
@@ -1758,7 +1910,47 @@ a.menu-toggle {
  * professional
  * -
  */
+ /**
+  * responsive:
+  * motm slider
+  * -
+  */
 
+ @media only screen and (max-width:1024px) {
+ 	#professional .flex-container {
+ 		max-width: 600px;
+ 	}
+ 	#motm-slider p {
+ 		font-size: 2.4rem;
+ 	}
+ }
+ @media only screen and (max-width:768px) {
+ 	#professional .flex-container {
+ 		width: 90%;
+ 	}
+ 	#motm-slider p {
+ 		font-size: 2.2rem;
+ 	}
+ }
+ @media only screen and (max-width:600px) {
+ 	#professional .flex-container {
+ 		width: 95%;
+ 	}
+ 	#motm-slider p {
+ 		font-size: 2rem;
+ 	}
+ 	#motm-slider p::before, #motm-slider p::after {
+ 		top: -0.5rem;
+ 	}
+ }
+ @media only screen and (max-width:400px) {
+ 	#professional .flex-container {
+ 		width: auto;
+ 	}
+ 	#motm-slider p {
+ 		font-size: 1.8rem;
+ 	}
+ }
 @media only screen and (max-width:1140px) {
 	.professional-content {
 		max-width: 800px;
@@ -2042,24 +2234,24 @@ a.menu-toggle {
  * -------------------------------------------------------------------
  */
 
-.section-ads {
+.section-archives {
 	margin-top: 4.8rem;
 	padding-top: 6rem;
 	max-width: 650px;
 	border-top: 1px dotted rgba(0, 0, 0, 0.1);
 	text-align: center;
 }
-.section-ads h2 a, .section-ads h2 a:visited {
+.section-archives h2 a, .section-archives h2 a:visited {
 	color: #252525;
 }
-.section-ads span {
+.section-archives span {
 	color: #0087cc;
 }
-.section-ads .button {
+.section-archives .button {
 	background: #f58026;
 	color: #FFFFFF;
 }
-.section-ads .button:hover, .section-ads .button:focus {
+.section-archives .button:hover, .section-archives .button:focus {
 	background: #f58026;
 }
 

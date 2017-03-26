@@ -40,6 +40,15 @@
     }
 	</style>
 
+  <!--iFrame Height
+  ================================================== -->
+ 	<script>
+ 	  function resizeIframe(obj){
+      obj.style.height = obj.contentWindow.document.body.scrollHeight+'px';
+      obj.style.width = '500px';
+    }
+ 	</script>
+
   <!-- script
   ================================================== -->
 	<script src="js/modernizr.js"></script>
@@ -58,7 +67,9 @@
  	  <div class="row">
 
    		<div class="logo">
-	         <a href="http://www.ans.org/">ANS at UIUC</a>
+        <a class="ans" href="http://www.ans.org/">ANS at UIUC</a>
+        <a class="facebook" href="http://www.facebook.com/">ANS at UIUC</a>
+        <a class="twitter" href="http://www.twitter.com/">ANS at UIUC</a>
       </div>
 
 	   	<nav id="main-nav-wrap">
@@ -266,97 +277,92 @@
 
     <div class="row section-intro">
       <div class="col-twelve with-bottom-line">
-        <h5>Our professional</h5>
-        <h1>Pick the best plan for you.</h1>
-        <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+        <h5>For any professional inqueries, contact the current Public Relations Chair.</h5>
+        <h1>Professional</h1>
+        <p class="lead">View our elected Members of the Month and most involved members! Check out available employment opportunities and scholarships below!</p>
       </div>
     </div>
 
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>Members of the Month</h5>
+      </div>
+    </div>
+
+    <div class="row flex-container">
+      <div id="motm-slider" class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="images/motm/1.png"></img>
+            <div class="member">
+              <h3>March 2017</h3>
+              <h1>Jane Doe</h1>
+              <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+            </div>
+          </li> <!-- /slide -->
+
+          <li>
+            <img src="images/motm/2.png"></img>
+            <div class="member">
+              <h3>February 2017</h3>
+              <h1>Jane Doe</h1>
+              <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+            </div>
+          </li> <!-- /slide -->
+
+          <li>
+            <img src="images/motm/2.png"></img>
+            <div class="member">
+              <h3>January 2017</h3>
+              <h1>Jane Doe</h1>
+              <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+            </div>
+          </li> <!-- /slide -->
+
+        </ul> <!-- /slides -->
+      </div> <!-- /motm-slider -->
+    </div> <!-- /flex-container -->
+
     <div class="row professional-content">
-      <div class="professional-tables block-1-4 group">
+      <div class="professional-tables block-1-2 group">
 
         <div class="bgrid">
         	<div class="price-block">
-        		<div class="top-part">
-          		<h3 class="plan-title">Starter</h3>
-               <p class="plan-price"><sup>$</sup>4.99</p>
-               <p class="price-month">Per month</p>
-               <p class="price-meta">Billed Annually.</p>
+        		<div class="top-part" style="background:#f58026;">
+          		<h3 class="plan-title">Critical Members 2016-2017</h3>
           	</div>
             <div class="bottom-part">
               <ul class="calendar">
-                <li><strong>3GB</strong> Storage</li>
-                <li><strong>10GB</strong> Bandwidth</li>
-                <li><strong>5</strong> Databases</li>
-                <li><strong>30</strong> Email Accounts</li>
+                <li><strong>Jane Doe</strong> junior</li>
+                <li><strong>John Doe</strong> freshman</li>
+                <li><strong>Peter Parker</strong> senior</li>
+                <li><strong>Steven Strange</strong> sophomore</li>
               </ul>
-              <a class="button large" href="">Get Started</a>
             </div>
           </div>
         </div> <!-- /price-block -->
 
         <div class="bgrid">
-        	<div class="price-block primary">
-        		<div class="top-part" data-info="recommended">
-          		<h3 class="plan-title">Standard</h3>
-               <p class="plan-price"><sup>$</sup>9.99</p>
-               <p class="price-month">Per month</p>
-  				     <p class="price-meta">Billed Annually.</p>
+        	<div class="price-block">
+        		<div class="top-part" style="background:#003e7e">
+          		<h3 class="plan-title">Members of the Month 2016-2017</h3>
           	</div>
             <div class="bottom-part">
               <ul class="calendar">
-                <li><strong>5GB</strong> Storage</li>
-                <li><strong>15GB</strong> Bandwidth</li>
-                <li><strong>7</strong> Databases</li>
-                <li><strong>40</strong> Email Accounts</li>
+                <li><strong>Jane Doe</strong> January 2017</li>
+                <li><strong>John Doe</strong> February 2017</li>
+                <li><strong>Peter Parker</strong> March 2017</li>
+                <li><strong>Steven Strange</strong> April 2017</li>
               </ul>
-              <a class="button large" href="">Get Started</a>
-              </div>
             </div>
-          </div> <!-- /price-block -->
+          </div>
+        </div> <!-- /price-block -->
+      </div> <!-- /professional-tables -->
+    </div> <!-- /professional-content -->
 
-          <div class="bgrid">
-            <div class="price-block">
-              <div class="top-part">
-                <h3 class="plan-title">Premium</h3>
-                <p class="plan-price"><sup>$</sup>19.99</p>
-                <p class="price-month">Per month</p>
-                <p class="price-meta">Billed Annually.</p>
-              </div>
-              <div class="bottom-part">
-                <ul class="calendar">
-                  <li><strong>10GB</strong> Storage</li>
-                  <li><strong>30GB</strong> Bandwidth</li>
-                  <li><strong>15</strong> Databases</li>
-                  <li><strong>60</strong> Email Accounts</li>
-                </ul>
-                <a class="button large" href="">Get Started</a>
-              </div>
-            </div>
-          </div> <!-- /price-block -->
-
-          <div class="bgrid">
-            <div class="price-block">
-              <div class="top-part">
-                <h3 class="plan-title">Ultimate</h3>
-                <p class="plan-price"><sup>$</sup>29.99</p>
-                <p class="price-month">Per month</p>
-                <p class="price-meta">Billed Annually.</p>
-              </div>
-              <div class="bottom-part">
-                <ul class="calendar">
-                  <li><strong>20GB</strong> Storage</li>
-                  <li><strong>40GB</strong> Bandwidth</li>
-                  <li><strong>25</strong> Databases</li>
-                  <li><strong>100</strong> Email Accounts</li>
-                </ul>
-                <a class="button large" href="">Get Started</a>
-              </div>
-            </div>
-          </div> <!-- /price-block -->
-
-        </div> <!-- /professional-tables -->
-      </div> <!-- /professional-content -->
+    <div style="background:#EAEAED;padding-top:1rem;display:block;margin:auto;">
+      <iframe src="newsletters/newsletter1.html" frameborder="0" marginheight="0" onload="resizeIframe(this)"></iframe>
+    </div>
 
   </section> <!-- /professional -->
 
@@ -375,22 +381,12 @@
     <div class="row flex-container">
       <div id="testimonial-slider" class="flexslider">
         <ul class="slides">
-
-          <li>
-            <img src="images/outreach/partofthesolution.jpg" style="width:100%;"></img>
-          </li> <!-- /slide -->
-
-          <li>
-            <img src="images/outreach/bustos.png" style="width:100%;"></img>
-          </li> <!-- /slide -->
-
-          <li>
-            <img src="images/outreach/kotek.png" style="width:100%;"></img>
-          </li> <!-- /slide -->
-
-          </ul> <!-- /slides -->
-        </div> <!-- /testimonial-slider -->
-      </div> <!-- /flex-container -->
+          <li><img src="images/outreach/partofthesolution.jpg" style="width:100%;"></img></li> <!-- /slide -->
+          <li><img src="images/outreach/bustos.png" style="width:100%;"></img></li> <!-- /slide -->
+          <li><img src="images/outreach/kotek.png" style="width:100%;"></img></li> <!-- /slide -->
+        </ul> <!-- /slides -->
+      </div> <!-- /testimonial-slider -->
+    </div> <!-- /flex-container -->
 
   </section> <!-- /outreach -->
 
@@ -443,10 +439,10 @@
    		</div> <!-- /q-and-a -->
    	</div> <!-- /faq-content -->
 
-   	<div class="row section-ads">
+   	<div class="row section-archives">
       <div class="col-twelve">
        	<div class="ad-content">
-       		<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+       		<h2 class="h01">Past Executive Boards</a></h2>
           <p class="lead">
             Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
       			Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
@@ -457,7 +453,7 @@
         	</div>
        	</div>
       </div>
-    </div> <!-- /section-ads -->
+    </div> <!-- /section-archives -->
 
   </section> <!-- /faq -->
 
@@ -498,7 +494,7 @@
   ================================================== -->
 
   <footer>
-
+<!--
     <div class="footer-main">
       <div class="row">
 
@@ -509,7 +505,7 @@
             Mountain View, CA 94043 US<br>
             info@lhander.com &nbsp; +123-456-789
           </p>
-        </div> <!-- /footer-info -->
+        </div> <! /footer-info >
 
         <div class="col-two tab-1-3 mob-1-2 site-links">
           <h4>Site Links</h4>
@@ -520,7 +516,7 @@
             <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
-        </div> <!-- /site-links -->
+        </div> <! /site-links >
 
         <div class="col-two tab-1-3 mob-1-2 social-links">
           <h4>Social</h4>
@@ -531,7 +527,7 @@
             <li><a href="#">Google+</a></li>
             <li><a href="#">Skype</a></li>
           </ul>
-        </div> <!-- /social -->
+        </div> <! /social >
 
         <div class="col-four tab-1-3 mob-full footer-subscribe">
           <h4>Subscribe</h4>
@@ -543,11 +539,11 @@
             <label for="mc-email" class="subscribe-message"></label>
           </form>
           </div>
-        </div> <!-- /subscribe -->
+        </div> <! /subscribe >
 
-      </div> <!-- /row -->
-    </div> <!-- /footer-main -->
-
+      </div> <! /row >
+    </div> <! /footer-main >
+-->
     <div class="footer-bottom">
       <div class="row">
         <div class="col-twelve">
