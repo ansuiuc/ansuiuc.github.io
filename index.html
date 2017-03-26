@@ -45,7 +45,7 @@
  	<script>
  	  function resizeIframe(obj){
       obj.style.height = obj.contentWindow.document.body.scrollHeight+'px';
-      obj.style.width = '500px';
+      obj.style.width = obj.contentWindow.document.body.scrollWidth+'px';
     }
  	</script>
 
@@ -68,8 +68,8 @@
 
    		<div class="logo">
         <a class="ans" href="http://www.ans.org/">ANS at UIUC</a>
-        <a class="facebook" href="http://www.facebook.com/">ANS at UIUC</a>
-        <a class="twitter" href="http://www.twitter.com/">ANS at UIUC</a>
+        <a class="facebook" href="https://www.facebook.com/groups/ANSatUofI/">ANS at UIUC</a>
+        <a class="twitter" href="https://twitter.com/ANS_UIUC/">ANS at UIUC</a>
       </div>
 
 	   	<nav id="main-nav-wrap">
@@ -360,7 +360,7 @@
       </div> <!-- /professional-tables -->
     </div> <!-- /professional-content -->
 
-    <div style="background:#EAEAED;padding-top:1rem;display:block;margin:auto;">
+    <div style="background:#EAEAED;padding-top:1rem;" align="center">
       <iframe src="newsletters/newsletter1.html" frameborder="0" marginheight="0" onload="resizeIframe(this)"></iframe>
     </div>
 
