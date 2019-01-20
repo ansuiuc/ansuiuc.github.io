@@ -1956,7 +1956,7 @@ a.menu-toggle {
 		max-width: 800px;
 	}
 	.professional-content .bgrid {
-		width: 50%;
+		width: 100%;
 		clear: none;
 	}
 	.professional-content .bgrid:nth-child(2n+1) {
