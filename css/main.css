@@ -837,7 +837,7 @@ header .logo a.slack {
 	width: 42px;
 	height: 42px;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	margin-bottom: 2rem;
 	border: none;
 	font: 0/0 a;
