@@ -817,13 +817,14 @@ header .row {
 	width: auto;
 	height: 66px;
 	position: relative;
+	padding: 30px;
 }
 
 header .logo {
 	margin-top: 2px;
 	z-index: 600;
 	position: absolute;
-	left: 35px;
+	left: 20px;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -1007,7 +1008,7 @@ a.menu-toggle {
  * -
  */
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1200px) {
 	#main-nav-wrap {
 		display: block;
 		width: 100%;
@@ -1152,7 +1153,7 @@ a.menu-toggle {
  * -
  */
 
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:1200px) {
 	#main-nav-wrap ul.main-navigation {
 		display: block !important;
 	}
