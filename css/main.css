@@ -148,6 +148,11 @@ h6, .h06 {
 	text-transform: uppercase;
 	letter-spacing: .15rem;
 }
+h7, .h07 {
+	font-size: 2rem;
+	line-height: 1.5;
+	text-align: center;
+}
 
 p img {
 	margin: 0;
