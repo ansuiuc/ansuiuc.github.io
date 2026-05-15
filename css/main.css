@@ -868,6 +868,14 @@ header .logo a.instagram {
 	background: url("../images/Instagram.png") no-repeat center;
 	background-size: 28px 28px;
 }
+header .logo a.tiktok {
+	background: url("../images/TikTok.png") no-repeat center;
+	background-size: 28px 28px;
+}
+header .logo a.linkedin {
+	background: url("../images/Linkedin.png") no-repeat center;
+	background-size: 28px 28px;
+}
 header .logo a.slack {
 	background: url("../images/Slack.png") no-repeat center;
 	background-size: 28px 28px;
