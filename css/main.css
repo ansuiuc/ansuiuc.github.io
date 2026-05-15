@@ -833,6 +833,8 @@ header .logo {
 header .logo a.ans,
 header .logo a.facebook,
 header .logo a.twitter,
+header .logo a.linkedin,
+header .logo a.tiktok,
 header .logo a.instagram,
 header .logo a.slack {
 	display: inline-block;
