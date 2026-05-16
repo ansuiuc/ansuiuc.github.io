@@ -853,9 +853,9 @@ header .logo a.slack {
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-header .logo a.ans {
+header .logo a.ans  {
 	background: url("../images/ans_logo.png") no-repeat center;
-	background-size: 42px 42px;
+	background-size: 28px 28px;
 	margin-right: 2rem;
 }
 header .logo a.facebook {
